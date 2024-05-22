@@ -1,0 +1,71 @@
+\documentclass[english]{article}
+\usepackage[
+ %work, %--- activate temporarily to visualise the type area while fine tuning the poster composition
+ ,cursor
+ ]{KITposter}
+ 
+%Custom packages needed
+\usepackage{siunitx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{fillbetween}
+\usepackage{tikzscale}
+\usepackage{tabularx}
+\usepackage{enumitem}
+ 
+\title{Characterizing The Annoyance of the Nasville 2024 Cicada Population in the Time and Frequency Domain}
+\author{\underline{M.-D. Noll}\thanks{marvin-dennis.noll@kit.edu}, O. Manzhura, M. Nabinger, M. Reißig and J. L. Steinmann
+}
+\institute{}
+
+
+\footline{\small%
+\begin{tabularx}{\linewidth}{p{0.15\linewidth} X p{0.15\linewidth} p{0.09\linewidth}}
+     \textbf{Contact} \newline
+	 *Marvin-Dennis Noll -- \url{marvin-dennis.noll@kit.edu}\newline Institute for Beam Physics and Technology\newline\url{www.ibpt.kit.edu} \newline Karlsruhe, Germany &
+	 \textbf{References} \newline
+	 \begin{enumerate}[nosep,label={[}\arabic*{]}]
+	 \item
+	 \end{enumerate} &
+	  \textbf{Acknowledgments} \newline 
+	  M.-D. Noll acknowledges the support by the Doctoral School "Karlsruhe School of Elementary Particle and Astroparticle Physics: Science and Technology" and the ipac24 student grant &
+	  \textbf{Conference} \newline
+	  \raisebox{-4.5cm}{\begin{minipage}[t]{1cm}\includegraphics[width=8cm]{ipac24logoc}\\
+	  \textbf{WEPG58}\end{minipage}}\\
+\end{tabularx}
+}                          
+            
+\def\boxheight{200mm}           
+\def\boxsep{6mm}     
+\begin{document}
+	\maketitle
+	\vspace{-40mm}
+	
+	\begin{boxgrayw}[\boxheight]{Motivation}{}
+		\begin{itemize}
+			\item bla
+		\end{itemize}
+	\end{boxgrayw}
+	\begin{boxgray2w}[\boxheight]{Time/Frequency Representation}{}
+		\includegraphics[height=160mm,width=460mm]{img/spect.tikz}
+		Blabla
+	\end{boxgray2w}
+	\vskip\boxsep
+	\begin{boxgray2w}[\boxheight]{Analysis in the Time Domain: Showing Rise/Decay of Mean Power}{}
+		\includegraphics[height=160mm,width=460mm]{img/timesignal.tikz}
+		Blabla
+	\end{boxgray2w}
+	\begin{boxgrayw}[\boxheight]{Captured Individuum}{}
+		\includegraphics[width=205mm]{img/vieh2.png}
+	\end{boxgrayw}
+	\vskip\boxsep
+	\begin{boxgray2w}[\boxheight]{Analysis in the Frequency Domain: Mean Frequency of Cicada Calls}{}
+		\includegraphics[height=160mm,width=460mm]{img/period.tikz}
+		Blablaaa
+	\end{boxgray2w}
+	\begin{boxgrayw}[\boxheight]{Summary}{}
+		\begin{itemize}
+			\item bla
+		\end{itemize}
+	\end{boxgrayw}
+\end{document}
